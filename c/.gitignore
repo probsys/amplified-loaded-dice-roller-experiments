@@ -1,0 +1,6 @@
+*.gch
+*.gcda
+*.gcna
+*.gcno
+*.o
+*.out
