@@ -1,26 +1,27 @@
-# The Amplified Loaded Dice Roller -- Experiments
+# The Amplified Loaded Dice Roller (Experiments)
 
 This repository contains experiments relating to the
 Amplified Loaded Dice Roller (ALDR), a fast algorithm for generating
 rolls of an $n$-sided die with rational probabilities.
 
 For a reference implementation of ALDR in C, please use the
-stand-alone repository in
+stand-alone repository at
 [https://github.com/probsys/amplified-loaded-dice-roller](https://github.com/probsys/amplified-loaded-dice-roller).
 
 ## Installation
 
-Please use a Python 3 virtual environment.
-To install the required Python modules, run the following.
+A Python 3 virtual environment is recommended. To install the required
+Python dependencies, run the following command
 
 ```sh
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 The `c/` and `rust/` directories include benchmarking programs
-for ALDR and the exact alias method, which read distributions
-from `distributions/*.dist`.
-To build these benchmarks, follow the instructions in
+for ALDR and an exact implementation of the
+[Walker alias method](https://dl.acm.org/doi/10.1145/355744.355749),
+using the probability distributions from `distributions/*.dist`.
+To build and run these benchmarks, follow the instructions in
 [c/README.md](c/README.md) and
 [rust/aldr/README.md](rust/aldr/README.md).
 
@@ -66,7 +67,7 @@ Run the notebook in
 Run the notebook in
 [python/figure-11-alias-aldr-compare.ipynb](python/figure-11-alias-aldr-compare.ipynb).
 
-### More experiments
+### Further Experiments
 
 More complete benchmarking data is included in
 [python/aldr-alias-performance-data.txt](python/aldr-alias-performance-data.txt).
@@ -82,7 +83,7 @@ for these data compared to
 The notebooks `python/experiment-*.ipynb` contain more experiments
 and examples of ALDR trees, as well as analysis of the entropy cost.
 
-### Entropy cost bounds
+### Entropy Cost Bounds
 
 The script
 [python/verification-toll-aldr-p-2k-leq-2.py](python/verification-toll-aldr-p-2k-leq-2.py)
