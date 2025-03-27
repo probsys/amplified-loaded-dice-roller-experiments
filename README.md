@@ -25,7 +25,7 @@ To build and run these benchmarks, follow the instructions in
 [c/README.md](c/README.md) and
 [rust/aldr/README.md](rust/aldr/README.md).
 
-## Running the experiments
+## Running the Experiments
 
 The following instructions show how to reproduce
 Figures 4, 5, 6, 8, and 11 from the main paper,
