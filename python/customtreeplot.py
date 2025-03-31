@@ -36,7 +36,7 @@ def plot_tree_tolls(A, gen_tree = gen_fldr_tree, toll_cutoff = default_cutoff, p
         depth_range.append(depth)
         if toll_cutoff(toll, ky_toll, depth_min, depth, depth_max):
             break
-    
+
     tree_tolls.append(ky_toll)
     depth_range.append(depth_max)
 
@@ -84,5 +84,5 @@ def plot_tree_tolls(A, gen_tree = gen_fldr_tree, toll_cutoff = default_cutoff, p
 def plot_tolls_uniform(m):
     assert m > 1 and m%2 == 1
     tolls, exp_min, exp_max = get_all_tolls_uniform(m)
-    
+
     plt.plot(range(exp_min, exp_max+1), tolls, label=f'$m={m}$')
