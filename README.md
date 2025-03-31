@@ -5,16 +5,22 @@ Amplified Loaded Dice Roller (ALDR), a fast algorithm for generating
 rolls of an $n$-sided die with rational probabilities.
 
 For a reference implementation of ALDR in C, please use the
-stand-alone repository at
+standalone repository at
 [https://github.com/probsys/amplified-loaded-dice-roller](https://github.com/probsys/amplified-loaded-dice-roller).
 
 ## Installation
 
-A Python 3 virtual environment is recommended. To install the required
+Using a Python 3 virtual environment is recommended, for example
+```sh
+$ python3 -m venv .pyenv
+$ source .pyenv/bin/activate
+```
+
+To install the required
 Python dependencies, run the following command
 
 ```sh
-python -m pip install -r requirements.txt
+$ python -m pip install -r requirements.txt
 ```
 
 The `c/` and `rust/` directories include benchmarking programs
@@ -31,6 +37,12 @@ The following instructions show how to reproduce
 Figures 4, 5, 6, 8, and 11 from the main paper,
 as well as other related computations.
 This software is tested on Ubuntu 24.04.
+After installing the dependencies, the notebooks can be
+run by launching a Jupyter server in the browser:
+
+```sh
+python -m jupyter lab
+```
 
 ### Figure 4
 
