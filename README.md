@@ -3,6 +3,12 @@
 This repository contains experiments relating to the
 Amplified Loaded Dice Roller (ALDR), a fast algorithm for generating
 rolls of an $n$-sided die with rational probabilities.
+The method and results reproduced in this repository
+are described in the following article
+
+_Efficient Rejection Sampling in the Entropy-Optimal Range_.
+Thomas L. Draper, Feras A. Saad. arXiv:2504.04267 [cs.DS], 2024.
+https://doi.org/10.48550/arXiv.2504.04267
 
 For a reference implementation of ALDR in C, please use the
 standalone repository at
