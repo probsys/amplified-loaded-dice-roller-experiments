@@ -2,12 +2,11 @@
 
 This repository contains experiments relating to the
 Amplified Loaded Dice Roller (ALDR), a fast algorithm for generating
-rolls of an $n$-sided die with rational probabilities.
-The method and results reproduced in this repository
-are described in the following article
+rolls of an $n$-sided die with rational probabilities,
+as described in the following article.
 
 _Efficient Rejection Sampling in the Entropy-Optimal Range_.
-Thomas L. Draper, Feras A. Saad. arXiv:2504.04267 [cs.DS], 2024.
+Thomas L. Draper, Feras A. Saad. arXiv:2504.04267 [cs.DS], 2025.
 https://doi.org/10.48550/arXiv.2504.04267
 
 For a reference implementation of ALDR in C, please use the
@@ -16,17 +15,17 @@ standalone repository at
 
 ## Installation
 
-Using a Python 3 virtual environment is recommended, for example
+To use a Python 3 virtual environment, run the following command.
+
 ```sh
-$ python3 -m venv .pyenv
-$ source .pyenv/bin/activate
+python3 -m venv aldr-experiments
+source aldr-experiments/bin/activate
 ```
 
-To install the required
-Python dependencies, run the following command
+To install the required Python dependencies, run the following command.
 
 ```sh
-$ python -m pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 The `c/` and `rust/` directories include benchmarking programs
@@ -37,14 +36,14 @@ To build and run these benchmarks, follow the instructions in
 [c/README.md](c/README.md) and
 [rust/aldr/README.md](rust/aldr/README.md).
 
-## Running the Experiments
+## Running the experiments
 
 The following instructions show how to reproduce
 Figures 4, 5, 6, 8, and 11 from the main paper,
 as well as other related computations.
 This software is tested on Ubuntu 24.04.
 After installing the dependencies, the notebooks can be
-run by launching a Jupyter server in the browser:
+run by launching a Jupyter server in the browser as follows.
 
 ```sh
 python -m jupyter lab
@@ -85,7 +84,7 @@ Run the notebook in
 Run the notebook in
 [python/figure-11-alias-aldr-compare.ipynb](python/figure-11-alias-aldr-compare.ipynb).
 
-### Further Experiments
+### Further experiments
 
 More complete benchmarking data is included in
 [python/aldr-alias-performance-data.txt](python/aldr-alias-performance-data.txt).
@@ -101,7 +100,7 @@ for these data compared to
 The notebooks `python/experiment-*.ipynb` contain more experiments
 and examples of ALDR trees, as well as analysis of the entropy cost.
 
-### Entropy Cost Bounds
+### Entropy cost bounds
 
 The script
 [python/verification-toll-aldr-p-2k-leq-2.py](python/verification-toll-aldr-p-2k-leq-2.py)
@@ -122,7 +121,7 @@ compute the worst-case toll of any $m$-type distribution
 1. `python/relative-toll-*.py`:
 a linear check of the stronger bound that the
 relative toll of each $A_i$ given weight sum $M$
-is less than two for each $a_i \in \{ 1, \ldots, m \}$.
+is less than two for each $`a_i \in \{ 1, \ldots, m \}`$.
 
 ### Experimental Python library
 
