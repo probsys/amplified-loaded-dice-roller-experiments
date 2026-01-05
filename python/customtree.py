@@ -1,5 +1,6 @@
 # Released under Apache 2.0; refer to LICENSE.txt
 
+import os
 import collections
 import math
 import random
@@ -7,7 +8,7 @@ import matplotlib.ticker as ticker
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-output_dir = Path(".")
+output_dir = Path(os.environ.get("ALDR_OUTPUT_DIR", "."))
 
 def get_binary_expansion_length(M):
     """Return the length of the binary expansion of 1/M for integer M>0."""
